@@ -203,12 +203,12 @@ class PID(object):
     @property
     def feed_forward_enabled(self):
         """Whether the feed forward term is currently enabled or not."""
-        return self._feed_forward
+        return self._feed_forward_enabled
     
     @feed_forward_enabled.setter
     def feed_forward(self, enabled:bool):
         """Enable or disable the feed forward."""
-        self._feed_forward = enabled 
+        self._feed_forward_enabled = enabled 
     
     @property
     def auto_mode(self):
