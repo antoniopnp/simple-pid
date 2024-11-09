@@ -206,9 +206,9 @@ class PID(object):
         return self._feed_forward_enabled
     
     @feed_forward_enabled.setter
-    def feed_forward(self, enabled:bool):
+    def feed_forward_enabled(self, enabled:bool):
         """Enable or disable the feed forward."""
-        self._feed_forward_enabled = enabled 
+        self._feed_forward_enabled = enabled
     
     @property
     def auto_mode(self):
